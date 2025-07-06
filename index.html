@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Traventure</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header class="hero">
+      <nav class="navbar">
+        <!-- logo -->
+        <div class="logo">
+          <span><h1>Traventure</h1></span>
+        </div>
+
+        <!-- links -->
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="destination.html">Destinations</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="destination.html">Bookings</a></li>
+          <li><a href="blog.html">Blogs</a></li>
+        </ul>
+
+        <!-- Buttons -->
+        <div class="nav-buttons">
+          <button class="login-btn"><a href="login.html">Login</a></button>
+          <button class="signup-btn"><a href="signUp.html">Sign Up</a></button>
+        </div>
+      </nav>
+
+      <div class="hero-content">
+        <h1>Journey with a Purpose</h1>
+        <p>Travel the world while making a positive impact.</p>
+      </div>
+    </header>
+
+    <section class="card_container">
+      <h2>Popular Destinations</h2>
+      <p>
+        Explore iconic cities and breathtaking landmarks — discover the wonders
+        waiting for you!
+      </p>
+
+      <div class="destination-cards">
+        <div class="card">
+          <img src="images/paris.jpg" alt="Paris" />
+          <div class="card-content">
+            <div class="card-number">01</div>
+            <h3>Paris</h3>
+            <span class="det"><a href="destination.html">Details</a></span>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="images/istanbul.jpg" alt="Istanbul" />
+          <div class="card-content">
+            <div class="card-number">02</div>
+            <h3>Istanbul</h3>
+            <span class="det"><a href="#">Details</a></span>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="images/egypt.jpg" alt="Egypt" />
+          <div class="card-content">
+            <div class="card-number">03</div>
+            <h3>Egypt</h3>
+            <span class="det"><a href="destination.html">Details</a></span>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="images/barcelona.webp" alt="Barcelona" />
+          <div class="card-content">
+            <div class="card-number">04</div>
+            <h3>Barcelona</h3>
+            <span class="det"><a href="destination.html">Details</a></span>
+          </div>
+        </div>
+      </div>
+      <div class="destination-cards">
+        <div class="card">
+          <img src="images/maldives.webp" alt="Maldives" />
+          <div class="card-content">
+            <div class="card-number">05</div>
+            <h3>Maldives</h3>
+            <span class="det"><a href="destination.html">Details</a></span>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="images/pakistan.webp" alt="Pakistan" />
+          <div class="card-content">
+            <div class="card-number">06</div>
+            <h3>Pakistan</h3>
+            <span class="det"><a href="destination.html">Details</a></span>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="images/korea.avif" alt="Korea" />
+          <div class="card-content">
+            <div class="card-number">07</div>
+            <h3>Korea</h3>
+            <span class="det"><a href="destination.html">Details</a></span>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="images/japan.avif" alt="japan" />
+          <div class="card-content">
+            <div class="card-number">08</div>
+            <h3>Japan</h3>
+            <span class="det"><a href="destination.html">Details</a></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="navigation-buttons">
+        <button class="nav-btn" onclick="showPrevious()">⟨</button>
+        <button class="nav-btn" onclick="showNext()">⟩</button>
+      </div>
+    </section>
+
+    <section class="Residence-offers">
+      <h2>Residence Offers</h2>
+      <p>
+        Find your perfect home away from home — in the heart of the world's most
+        beautiful cities
+      </p>
+
+      <div class="offers-container">
+        <div class="offer-card">
+          <div class="offer-image">
+            <img src="images/residence1.webp" alt="House1" />
+          </div>
+          <div class="offer-details">
+            <h3>$7,540</h3>
+            <div class="icons">
+              <span>🛏️ 2 beds</span>
+              <span>🛁 1 Bath</span>
+              <span>🚌 Shuttle</span>
+              <span>📶 Wi-Fi</span>
+            </div>
+            <p class="location">
+              📍 25 Haeundae Beach Road, Busan, South Korea
+            </p>
+            <button class="view-details">View Details →</button>
+          </div>
+        </div>
+
+        <!-- Repeat card -->
+        <div class="offer-card">
+          <div class="offer-image">
+            <img src="images/residence2.avif" alt="House2" />
+          </div>
+          <div class="offer-details">
+            <h3>$9,610</h3>
+            <div class="icons">
+              <span>🛏️ 2 beds</span>
+              <span>🛁 1 Bath</span>
+              <span>🚌 Shuttle</span>
+              <span>📶 Wi-Fi</span>
+            </div>
+            <p class="location">📍 3-15-5 Shibuya, Shibuya-ku, Tokyo, Japan</p>
+            <button class="view-details">View Details →</button>
+          </div>
+        </div>
+
+        <div class="offer-card">
+          <div class="offer-image">
+            <img src="images/residence3.avif" alt="House3" />
+          </div>
+          <div class="offer-details">
+            <h3>$6,880</h3>
+            <div class="icons">
+              <span>🛏️ 2 beds</span>
+              <span>🛁 1 Bath</span>
+              <span>🚌 Shuttle</span>
+              <span>📶 Wi-Fi</span>
+            </div>
+            <p class="location">
+              📍 House #15, Street 32, F-8/1, Islamabad, Pakistan
+            </p>
+            <button class="view-details">View Details →</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="blog-section">
+      <h2>Our best blogs</h2>
+      <p>Discover Stories from the World's Most Beautiful Destinations</p>
+
+      <div class="blog-container">
+        <div class="blog-card">
+          <img src="images/taj mahal.avif" alt="taj mahal" />
+          <div class="blog-content">
+            <h3>Eternal Beauty of the Taj Mahal</h3>
+            <p>
+              Marvel at the timeless elegance of the Taj Mahal, a symbol of
+              everlasting love and architectural brilliance. Nestled along the
+              Yamuna River, this ivory-white masterpiece captures hearts with
+              its breathtaking symmetry
+            </p>
+            <a href="blog.html">Read More →</a>
+          </div>
+        </div>
+
+        <div class="blog-card">
+          <img src="images/hunza peaks.avif" alt="Hunza peaks" />
+          <div class="blog-content">
+            <h3>Majestic Peaks of Hunza Valley</h3>
+            <p>
+              Step into the breathtaking beauty of Hunza Valley, Pakistan, where
+              snow-capped mountains kiss the skies and vibrant cultures welcome
+              you with open arms. A true paradise for adventurers and dreamers
+              alike.
+            </p>
+            <a href="blog.html">Read More →</a>
+          </div>
+        </div>
+
+        <div class="blog-card">
+          <img src="images/cherry blossom.webp" alt="cherry blossoms" />
+          <div class="blog-content">
+            <h3>Cherry Blossoms in Kyoto</h3>
+            <p>
+              Witness the magical transformation of Kyoto, Japan, as cherry
+              blossoms paint the ancient temples and peaceful streets in soft
+              hues of pink. A timeless celebration of beauty, tradition, and
+              serenity.
+            </p>
+            <a href="blog.html">Read More →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-section logo-section">
+          <!-- <h2><img src="" alt="Logo" class="logoF"> Traventure</h2> -->
+          <h2>Traventure</h2>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+          </div>
+        </div>
+        <div class="footer-section">
+          <h3>Information</h3>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Explore</a></li>
+            <li><a href="#">Travel</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Helpful Links</h3>
+          <ul>
+            <li><a href="#">Destination</a></li>
+            <li><a href="#">Support</a></li>
+            <li><a href="#">Travel & Condition</a></li>
+            <li><a href="#">Privacy</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Contact</h3>
+          <p>+651 125 658</p>
+          <p>Traventure@gmail.com</p>
+        </div>
+      </div>
+
+      <hr />
+
+      <div class="footer-bottom">
+        <p>©2025 , All Right Reserved.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+

@@ -1,0 +1,144 @@
+/* Navbar */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 50px;
+    background:gray;
+  }
+  
+  /* Logo */
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #eab308;
+  
+  }
+  
+  .logo img {
+    width: 40px;
+    height: 40px;
+  }
+  
+  /* Nav Links */
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+  }
+  
+  .nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links li a:hover {
+    color: #facc15; /* Yellow hover */
+  }
+  
+  /* Nav Buttons */
+  .nav-buttons {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .login-btn {
+    border: 2px solid #facc15;
+    background: transparent;
+    color: #facc15;
+    padding: 8px 20px;
+    border-radius: 9999px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s ease;
+  }
+  
+  .login-btn:hover {
+    background: #facc15;
+    color: black;
+  }
+
+  .login-btn a{
+    text-decoration: none;
+    color: #facc15;
+  }
+  
+  .signup-btn {
+    background: #facc15;
+    color: black;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 9999px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background 0.3s ease;
+  }
+  
+  .signup-btn:hover {
+    background: #eab308;
+  }
+
+  .signup-btn a{
+    text-decoration: none;
+    color: #555;
+  }
+
+
+  /* styling for blog portion */
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    color: #292727;
+  }
+  
+  .Main_container {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+  }
+
+  .main-title {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #333;
+    font-size: 2.5em;
+  }
+  
+  .b-container {
+    max-width: 800px;
+    background: #fff;
+    padding: 30px;
+    margin: 40px auto;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  }
+  
+  /* Image styling */
+  .blog-image {
+    width: 91%;
+    padding: 40px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 81px;
+    margin-bottom: 25px;
+  }
+  
+  /* Blog title */
+  .blog-title {
+    margin-top: -50px;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #222;
+  }
+  
+  /* Blog paragraph */
+  .blog-text {
+    font-size: 1.05rem;
+    color: #555;
+    line-height: 1.8;
+  }

@@ -1,0 +1,450 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  font-family: 'Arial', sans-serif;
+  background: #f8f9fa;
+}
+
+/* styling for  Header */
+.hero {
+  position: relative;
+  width: 100%;
+  height: 80vh;
+  background-image: url(images/back.jpg);
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+/* Navbar */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background:transparent;
+}
+
+/* Logo */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #eab308;
+
+}
+
+.logo img {
+  width: 40px;
+  height: 40px;
+}
+
+/* Nav Links */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: #facc15; /* Yellow hover */
+}
+
+/* Nav Buttons */
+.nav-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.login-btn {
+  border: 2px solid #facc15;
+  background: transparent;
+  color: #facc15;
+  padding: 8px 20px;
+  border-radius: 9999px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.login-btn a{
+  text-decoration: none;
+  color: #facc15;
+}
+
+.login-btn:hover {
+  background: #facc15;
+  color: rgb(246, 242, 242);
+}
+
+.signup-btn {
+  background: #facc15;
+  padding: 8px 20px;
+  border: none;
+  border-radius: 9999px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+
+.signup-btn:hover {
+  background: #eab308;
+}
+
+.signup-btn a{
+  text-decoration: none;
+  color: #333;
+}
+
+
+/* Hero Text */
+ .hero-content {
+  text-align: center;
+  padding-top: 100px;
+  font-weight: 600;
+ }
+
+ /* styling for destination section */
+
+ .card_container {
+  padding-top: 100px;
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.card_container h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.card_container p {
+  color: #666;
+  margin-bottom: 40px;
+}
+
+.destination-cards{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  width: 250px;
+  transition: transform 0.3s;
+ float: left;
+ margin: 13px;
+  
+}
+
+.card:hover {
+  transform: translateY(-25px);
+}
+
+.card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-number {
+  font-weight: bold;
+  color: orange;
+  font-size: 18px;
+}
+
+.card h3 {
+  font-size: 18px;
+  margin: 0;
+}
+
+.det a {
+  color: orange;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.navigation-buttons {
+  margin-top: 30px;
+  text-align: center;
+  
+}
+
+.nav-btn {
+  background: white;
+  border: 2px solid #ccc;
+  padding: 8px 12px;
+  margin: 0 5px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background 0.3s;
+}
+
+.nav-btn:hover {
+  background: #ddd;
+}
+
+/* styling for residence section */
+.Residence-offers {
+  text-align: center;
+  padding: 50px 20px;
+  padding-top: 100px;
+}
+
+.Residence-offers h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.Residence-offers p {
+  font-size: 1.2rem;
+  color: #666;
+}
+
+
+.offers-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 40px;
+  gap: 20px;
+}
+
+.offer-card {
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  overflow: hidden;
+  width: 350px;
+  transition: transform 0.3s;
+}
+
+.offer-card:hover {
+  transform: translateY(-25px);
+}
+
+.offer-image img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.offer-details {
+  padding: 20px;
+  text-align: left;
+}
+
+.offer-details h3 {
+  margin: 0;
+  font-size: 1.8rem;
+  color: #333;
+}
+
+.icons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 15px 0;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.location {
+  font-size:small;
+  color: #888;
+  margin-bottom: 20px;
+}
+
+.view-details {
+  width: 100%;
+  background: orange;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 1rem;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.view-details:hover {
+  background: darkorange;
+}
+
+/* styling of blog section */
+.blog-section {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.blog-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.blog-section p {
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 40px;
+}
+
+.blog-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+  
+}
+
+.blog-card {
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.blog-card:hover {
+  transform: translateY(-25px);
+}
+
+.blog-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.blog-content {
+  padding: 20px;
+  text-align: left;
+}
+
+.blog-content h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.blog-content p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.blog-content a {
+  color: #ff9900;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.blog-content a:hover {
+  text-decoration: underline;
+}
+
+/* styling for footer section */
+.footer {
+  background-color: #d3d0cf;
+  padding: 40px 20px;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 200px;
+  margin: 10px;
+}
+
+.logo-section h2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #eab308;
+}
+
+.logoF {
+  width: 30px;
+  margin-right: 10px;
+}
+
+.social-icons {
+  margin-top: 10px;
+}
+
+.social-icons a {
+  margin: 0 5px;
+  color: #333;
+  font-size: 20px;
+  display: inline-block;
+}
+
+.footer-section h3 {
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+  text-decoration: none;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+  color: #ff9900;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #999;
+  margin: 20px 0;
+}
+
+.footer-bottom p {
+  font-size: 14px;
+  color: #555;
+}

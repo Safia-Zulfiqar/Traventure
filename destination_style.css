@@ -1,0 +1,292 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body */
+  body {
+    font-family: 'Arial', sans-serif;
+    background: #f8f9fa;
+  }
+  
+  /* styling for  Header */
+  .D_hero {
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    background-image: url(images/D_back.jpg);
+    background-size: cover;
+    background-position: center;
+    color: white;
+  }
+  
+  /* Navbar */
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background:transparent;
+  }
+  
+  /* Logo */
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #eab308;
+  
+  }
+  
+  .logo img {
+    width: 40px;
+    height: 40px;
+  }
+  
+  /* Nav Links */
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+  }
+  
+  .nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links li a:hover {
+    color: #facc15; /* Yellow hover */
+  }
+  
+  /* Nav Buttons */
+  .nav-buttons {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .login-btn {
+    border: 2px solid #facc15;
+    background: transparent;
+    color: #facc15;
+    padding: 8px 20px;
+    border-radius: 9999px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s ease;
+  }
+  
+  .login-btn:hover {
+    background: #facc15;
+    color: black;
+  }
+
+  .login-btn a{
+    text-decoration: none;
+    color: #facc15;
+  }
+  
+  .signup-btn {
+    background: #facc15;
+    color: black;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 9999px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background 0.3s ease;
+  }
+  
+  .signup-btn:hover {
+    background: #eab308;
+  }
+
+  .signup-btn a{
+    text-decoration: none;
+    color: #555;
+  }
+  
+  /* Hero Text */
+   .D_hero-content {
+    text-align: center;
+    padding-top: 100px;
+    font-weight: 600;
+   }
+
+
+   /* styling of destination section */
+
+   .destinations {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding-top: 160px;
+    margin: 30px;
+  }
+  
+  .D_card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    overflow: hidden;
+    padding: 15px;
+    transition: transform 0.3s;
+  }
+  
+  .D_card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .D_card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  h2 {
+    font-size: 22px;
+    margin: 10px 0;
+  }
+  
+  h4 {
+    margin: 10px 0 5px;
+    color: #555;
+  }
+  
+  ul {
+    list-style: disc inside;
+    padding-left: 10px;
+    margin: 0 0 10px;
+  }
+  
+  .package {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 10px 0;
+    font-size: 14px;
+  }
+  
+  .package span {
+    background: #f0f0f0;
+    padding: 5px 8px;
+    border-radius: 5px;
+  }
+  
+  .bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .bottom p {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  button {
+    background: #ffa500;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  button:hover {
+    background: #ff8c00;
+  }
+
+  button a{
+    color: aliceblue;
+    text-decoration: none;
+  }
+
+
+  /* styling for footer section */
+.footer {
+  background-color: #d3d0cf;
+  padding: 40px 20px;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  margin-top: 130px;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 200px;
+  margin: 10px;
+}
+
+.logo-section h2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #eab308;
+}
+
+.logoF {
+  width: 30px;
+  margin-right: 10px;
+}
+
+.social-icons {
+  margin-top: 10px;
+}
+
+.social-icons a {
+  margin: 0 5px;
+  color: #333;
+  font-size: 20px;
+  display: inline-block;
+}
+
+.footer-section h3 {
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+  text-decoration: none;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+  color: #ff9900;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #999;
+  margin: 20px 0;
+}
+
+.footer-bottom p {
+  font-size: 14px;
+  color: #555;
+}
+  
