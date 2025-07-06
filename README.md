@@ -8,7 +8,7 @@ This project was created as a part of my web development learning journey. It he
 
 ## 🚀 Live Website
 
-[Click here to view the live site](#) <!--our site is live at https://safia-zulfiqar.github.io/Traventure/ -->
+[Click here to view the live site](#) <!--https://safia-zulfiqar.github.io/Traventure/ -->
 
 ---
 
